@@ -1,21 +1,25 @@
-<%= render 'navbar'%>
 
 
+
+    <%= render 'navbar'%>
     <%= render 'carrousel' %>
-<div class ="container ">
+<div class ="container">
+  <a href="https://wa.me/+5512997664211?text=Olá!%20Estou%20no%20site%20da%20veleiroseventos%20e%20gostaria%20de%20mais%20informações%20:)" class="sticky-whatsapp-logo">
+    <i class="fa-brands fa-whatsapp fa-4x" style="color: #3cd228;"></i>
+  </a>
   <div class ="row justify-content-center">
     <h1>Nossos Produtos</h1>
   </div>
 
-  <div class="row justify-content-center">
+  <div id="scrollspyHeadingProdutos", class="row justify-content-center">
 
           <div class="card product " style="width: 18rem;">
           <a class="nav-link" href="#scrollspyHeadingCursos">
-             <img src="https://media.istockphoto.com/id/480615130/pt/foto/vela-com-veleiro.jpg?s=612x612&w=0&k=20&c=ZE1YVv3gK6oxfDpHKB1t3VRKxLtppDl5JsWad9pBwns=" class="card-img-top" alt="...">
-          </a>
+             <%= image_tag "IMG_1389.JPG", class:"card-img-top", alt:"..." %>
             <div class="card-body">
               <p class="card-text">Cursos Básicos</p>
             </div>
+          </a>
           </div>
 
 
@@ -23,16 +27,16 @@
       <div class="card product" style="width: 18rem;">
        <a class="nav-link" href="#scrollspyHeadingRegatas">
         <img src="https://media.istockphoto.com/id/480615130/pt/foto/vela-com-veleiro.jpg?s=612x612&w=0&k=20&c=ZE1YVv3gK6oxfDpHKB1t3VRKxLtppDl5JsWad9pBwns=" class="card-img-top" alt="...">
-        </a>
         <div class="card-body">
           <p class="card-text">Regatas</p>
         </div>
+        </a>
       </div>
 
 
       <div class="card product" style="width: 18rem;">
         <a class="nav-link" href="#scrollspyHeadingPasseios">
-        <img src="https://media.istockphoto.com/id/480615130/pt/foto/vela-com-veleiro.jpg?s=612x612&w=0&k=20&c=ZE1YVv3gK6oxfDpHKB1t3VRKxLtppDl5JsWad9pBwns=" class="card-img-top" alt="...">
+         <%= image_tag "WhatsApp Image 2023-03-23 at 23.35.23.jpeg", class:"card-img-top", alt:"..." %>
         <div class="card-body">
           <p class="card-text">Passeios</p>
         </div>
@@ -41,26 +45,32 @@
   </div>
 
   <div class ="row justify-content-center">
+   <a class="nav-link" href="#scrollspyHeadingPasseios">
       <div class="card product" style="width: 18rem;">
-        <img src="https://media.istockphoto.com/id/480615130/pt/foto/vela-com-veleiro.jpg?s=612x612&w=0&k=20&c=ZE1YVv3gK6oxfDpHKB1t3VRKxLtppDl5JsWad9pBwns=" class="card-img-top" alt="...">
+         <%= image_tag "WhatsApp Image 2023-03-23 at 23.35.54.jpeg", class:"card-img-top", alt:"..." %>
         <div class="card-body">
           <p class="card-text">Clínicas</p>
         </div>
+         </a>
       </div>
 
 
       <div class="card product" style="width: 18rem;">
-        <img src="https://media.istockphoto.com/id/480615130/pt/foto/vela-com-veleiro.jpg?s=612x612&w=0&k=20&c=ZE1YVv3gK6oxfDpHKB1t3VRKxLtppDl5JsWad9pBwns=" class="card-img-top" alt="...">
+      <a class="nav-link" href="#scrollspyHeadingPasseios">
+         <%= image_tag "WhatsApp Image 2023-03-23 at 23.36.12.jpeg", class:"card-img-top", alt:"..." %>
         <div class="card-body">
           <p class="card-text">Imersivo</p>
         </div>
+         </a>
       </div>
 
       <div class="card product" style="width: 18rem;">
+      <a class="nav-link" href="#scrollspyHeadingPasseios">
         <img src="https://media.istockphoto.com/id/480615130/pt/foto/vela-com-veleiro.jpg?s=612x612&w=0&k=20&c=ZE1YVv3gK6oxfDpHKB1t3VRKxLtppDl5JsWad9pBwns=" class="card-img-top" alt="...">
         <div class="card-body">
           <p class="card-text">Cursos Personalizados</p>
         </div>
+         </a>
       </div>
   </div>
 
@@ -90,7 +100,7 @@
     </div>
   </div>
 
-    <hr class="bg-danger border-2 border-top border">
+   <hr class="bg-danger border-2 border-top border-danger">
 
     <h1>Nossos Cursos</h1>
 <%#  mudar tipo de card %>
@@ -112,40 +122,36 @@
       </div>
     </div>
 
-    <hr class="bg-danger border-2 border-top border">
+   <hr class="bg-danger border-2 border-top border-danger">
 
     <h1 >Participe de Regatas!</h1>
+    <img id="scrollspyHeadingRegatas" src="http://www.yci.com.br/wp-content/uploads/2023/03/CALENDARIO_VELA2023-02-960x1100.jpg"  alt="calendario de regatas" class="img-fluid">
 
-<%# id ="scrollspyHeading2" %>
-  <hr class="bg-danger border-2 border-top border">
+
+
+ <hr class="bg-danger border-2 border-top border-danger">
   <h1>Passeios e Charters</h1>
 
-   <hr class="bg-danger border-2 border-top border">
+  <hr class="bg-danger border-2 border-top border-danger">
 
    <h1>Quem somos nós</h1>
-   <div class = "row">
-
+   <div id="scrollspyHeadingSobreNos", class = "row">
+    <p >Somos uma das escolas mais tradicionais da capital da vela! Ensinamos com excelência, zêlo, e respeito pelo mar.</p>
    </div>
 
 
 
 
-<a href="https://wa.me/+5512997664211?text=Olá!%20Estou%20no%20site%20da%20veleiroseventos%20e%20gostaria%20de%20mais%20informações%20:)" class="sticky-whatsapp-logo">
-  <i class="fa-brands fa-whatsapp fa-4x" style="color: #3cd228;"></i>
-</a>
+
 
 
 
 </div>
-<div class="footer">
-  <div class="footer-links">
-    <a href="#"><i class="fab fa-github"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-facebook"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
-    <a href="#"><i class="fab fa-linkedin"></i></a>
+
+  <div class="footer">
+    <div class="footer-links">
+    </div>
+    <div class="footer-copyright">
+      <p>Veleiros Eventos "venha velejar conosco!</p>
+    </div>
   </div>
-  <div class="footer-copyright">
-    This footer is made with <i class="fas fa-heart"></i> at Le Wagon
-  </div>
-</div>

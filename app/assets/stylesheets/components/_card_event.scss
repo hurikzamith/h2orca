@@ -1,11 +1,16 @@
 .card-event {
   overflow: hidden;
   height: 120px;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  background: #5BC0F8;
+  border-radius: 1%;
+
   display: flex;
   align-items: center;
   margin:1%;
+}
+
+.card-event:hover{
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .card-event img {
