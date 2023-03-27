@@ -1,2 +1,151 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<%= render 'navbar'%>
+
+
+    <%= render 'carrousel' %>
+<div class ="container ">
+  <div class ="row justify-content-center">
+    <h1>Nossos Produtos</h1>
+  </div>
+
+  <div class="row justify-content-center">
+
+          <div class="card product " style="width: 18rem;">
+          <a class="nav-link" href="#scrollspyHeadingCursos">
+             <img src="https://media.istockphoto.com/id/480615130/pt/foto/vela-com-veleiro.jpg?s=612x612&w=0&k=20&c=ZE1YVv3gK6oxfDpHKB1t3VRKxLtppDl5JsWad9pBwns=" class="card-img-top" alt="...">
+          </a>
+            <div class="card-body">
+              <p class="card-text">Cursos Básicos</p>
+            </div>
+          </div>
+
+
+
+      <div class="card product" style="width: 18rem;">
+       <a class="nav-link" href="#scrollspyHeadingRegatas">
+        <img src="https://media.istockphoto.com/id/480615130/pt/foto/vela-com-veleiro.jpg?s=612x612&w=0&k=20&c=ZE1YVv3gK6oxfDpHKB1t3VRKxLtppDl5JsWad9pBwns=" class="card-img-top" alt="...">
+        </a>
+        <div class="card-body">
+          <p class="card-text">Regatas</p>
+        </div>
+      </div>
+
+
+      <div class="card product" style="width: 18rem;">
+        <a class="nav-link" href="#scrollspyHeadingPasseios">
+        <img src="https://media.istockphoto.com/id/480615130/pt/foto/vela-com-veleiro.jpg?s=612x612&w=0&k=20&c=ZE1YVv3gK6oxfDpHKB1t3VRKxLtppDl5JsWad9pBwns=" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Passeios</p>
+        </div>
+        </a>
+      </div>
+  </div>
+
+  <div class ="row justify-content-center">
+      <div class="card product" style="width: 18rem;">
+        <img src="https://media.istockphoto.com/id/480615130/pt/foto/vela-com-veleiro.jpg?s=612x612&w=0&k=20&c=ZE1YVv3gK6oxfDpHKB1t3VRKxLtppDl5JsWad9pBwns=" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Clínicas</p>
+        </div>
+      </div>
+
+
+      <div class="card product" style="width: 18rem;">
+        <img src="https://media.istockphoto.com/id/480615130/pt/foto/vela-com-veleiro.jpg?s=612x612&w=0&k=20&c=ZE1YVv3gK6oxfDpHKB1t3VRKxLtppDl5JsWad9pBwns=" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Imersivo</p>
+        </div>
+      </div>
+
+      <div class="card product" style="width: 18rem;">
+        <img src="https://media.istockphoto.com/id/480615130/pt/foto/vela-com-veleiro.jpg?s=612x612&w=0&k=20&c=ZE1YVv3gK6oxfDpHKB1t3VRKxLtppDl5JsWad9pBwns=" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Cursos Personalizados</p>
+        </div>
+      </div>
+  </div>
+
+  <hr class="bg-danger border-2 border-top border-danger">
+
+
+     <h1>Próximos Eventos!</h1>
+  <div class="card-event">
+    <img src="https://www.ilhabela.com.br/wp-content/uploads/2014/08/regata-do-camarao-ilhabela-destaque.jpg" />
+    <div class="card-event-infos">
+      <h2>Regata do Camarão</h2>
+      <p>Venha fazer uma deliciosa regata brindada com coquetel de camarão ao fina.</p>
+    </div>
+  </div>
+  <div class="card-event">
+    <%=image_tag"WhatsApp Image 2023-03-24 at 19.51.47"%>
+    <div class="card-event-infos">
+      <h2>Semana de Vela de Ilhabela</h2>
+      <p>Venha fazer uma deliciosa regata brindada com coquetel de camarão ao fina.</p>
+    </div>
+  </div>
+  <div class="card-event">
+    <img src="https://www.portalr3.com.br/wp-content/uploads/2019/08/20190804-vela-mulheres_1-1200x900.jpeg" />
+    <div class="card-event-infos">
+      <h2>Curso Básico de Vela Oceânica</h2>
+      <p>Venha fazer uma deliciosa regata brindada com coquetel de camarão ao fina.</p>
+    </div>
+  </div>
+
+    <hr class="bg-danger border-2 border-top border">
+
+    <h1>Nossos Cursos</h1>
+<%#  mudar tipo de card %>
+
+  <div id ="scrollspyHeadingCursos", class="row justify-content-center">
+      <div class="card product" style="width: 30rem;">
+        <img src="https://media.istockphoto.com/id/480615130/pt/foto/vela-com-veleiro.jpg?s=612x612&w=0&k=20&c=ZE1YVv3gK6oxfDpHKB1t3VRKxLtppDl5JsWad9pBwns=" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with dO</p>
+        </div>
+      </div>
+
+
+      <div class="card product" style="width: 30rem;">
+        <img src="https://media.istockphoto.com/id/480615130/pt/foto/vela-com-veleiro.jpg?s=612x612&w=0&k=20&c=ZE1YVv3gK6oxfDpHKB1t3VRKxLtppDl5JsWad9pBwns=" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with dO</p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="bg-danger border-2 border-top border">
+
+    <h1 >Participe de Regatas!</h1>
+
+<%# id ="scrollspyHeading2" %>
+  <hr class="bg-danger border-2 border-top border">
+  <h1>Passeios e Charters</h1>
+
+   <hr class="bg-danger border-2 border-top border">
+
+   <h1>Quem somos nós</h1>
+   <div class = "row">
+
+   </div>
+
+
+
+
+<a href="https://wa.me/+5512997664211?text=Olá!%20Estou%20no%20site%20da%20veleiroseventos%20e%20gostaria%20de%20mais%20informações%20:)" class="sticky-whatsapp-logo">
+  <i class="fa-brands fa-whatsapp fa-4x" style="color: #3cd228;"></i>
+</a>
+
+
+
+</div>
+<div class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <div class="footer-copyright">
+    This footer is made with <i class="fas fa-heart"></i> at Le Wagon
+  </div>
+</div>
