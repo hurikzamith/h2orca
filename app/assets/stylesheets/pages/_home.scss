@@ -23,6 +23,13 @@ h1{
 .container{
   display: block;
   margin: 0 auto;
+  position:relative;
+  z-index: 999;
+}
+
+.whats{
+  position:absolute;
+  z-index: 1000
 }
 
 body{
