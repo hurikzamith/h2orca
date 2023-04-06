@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Reseting */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+.staff-container .col-md-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.staff-container .card::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    height: 0;
+    width: 150%;
+    background-color: #1369ce;
+    z-index: -1;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    transition: all 0.5s ease-in-out;
+}
+
+.staff-container .card {
+    margin: 3%;
+    width: 280px;
+    height: 320px;
+    overflow: hidden;
+    z-index: 3;
+    transition: all 0.5s ease-in-out;
+    border: none;
+    box-shadow: 5px 5px 10px #1f1f1fa8,
+                -5px -5px 10px #1f1f1fa8;
+}
+
+.staff-container .card:hover::before {
+    height: 150px;
+}
+
+.staff-container .card .img-staff-container {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 30px;
+    transition: all 0.5s ease-in-out;
+}
+
+.staff-container .card:hover .img-staff-container {
+    border: 10px solid #1369ce;
+}
+
+.staff-container .card .img-staff-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: all 0.5s ease-in-out;
+}
+
+.staff-container .card:hover .img-staff-container img {
+    box-shadow: 0 0 0 14px #f7f5ec;
+    transform: scale(0.8);
+}
+
+.staff-container .card .h3 {
+    margin-bottom: 5px !important;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+.staff-container .card .designation {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    pointer-events: none;
+}
+
+.staff-container .card ul {
+    background-color: #1369ce;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(100px);
+}
+
+.staff-container .card:hover ul {
+    transform: translateY(40px);
+}
+
+.staff-container .card ul li {
+    padding: 5px 8px;
+    transition: all 0.4s;
+}
+
+.staff-container .card ul li a {
+    color: #FFF;
+}
+
+.staff-container .card ul li:hover {
+    background: #fff;
+}
+
+.staff-container .card ul li:hover a {
+    color: #1369ce;
+}
+
+.designation {
+  padding: 2%;
+}
